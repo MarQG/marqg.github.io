@@ -1,0 +1,51 @@
+#menu-button{
+    position: fixed;
+    top: 15px;
+    left: 15px;
+}
+
+#sidebar{
+    position: fixed;
+}
+
+.stage-toggle{
+    background-color: #042d58;
+}
+
+.stage-toggle{
+    background-color: rgba(0,0,0,.4)
+}
+
+.hero-section {
+    /* color:rgb(59, 212, 179); */
+    color:#9effa2;
+    
+}
+
+#logo{
+    position: relative;
+    top:-50px;
+    height:320px;
+    width: 270px;
+    border: 3px solid #9effa2;
+}
+
+.hero-section .block-background img{
+    height: 100%;
+    width: 100%;
+    opacity: 0.45;
+}
+
+#stack-image{
+    height:315px;
+    width:315px;
+}
+
+.thumbnail{
+    border: none;
+    padding: 0 50px;
+}
+
+.thumbnail img{
+    height: 150px;
+}

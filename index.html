@@ -1,62 +1,337 @@
 <!DOCTYPE html>
-<html lang="en-us">
+<html lang="en">
+
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Ferenc Gutierrez</title>
-	<link href="https://fonts.googleapis.com/css?family=Allerta" rel="stylesheet">
-	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
-	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <!-- These meta tags come first. -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Ferenc Gutierrez</title>
+
+    <!-- Include the CSS -->
+    <link href="./dist/toolkit-minimal.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.4/js/all.js"></script>
 </head>
+
 <body>
 
-	<header class="header">
-		<div class="wrapper">
-			<div class="logo">
-				<h1>Ferenc Gutierrez</h1>
-			</div>
+    <div class="stage-shelf hidden" id="sidebar">
+        <ul class="nav nav-bordered nav-stacked">
+            <li class="nav-header">Web Developer</li>
+            <li>
+                <a href="#" data-target=".stage" data-toggle="stage">Home</a>
+            </li>
+            <li>
+                <a href="#web-dev" data-target=".stage" data-toggle="stage">About Me</a>
+            </li>
+            <li>
+                <a href="#expert" data-target=".stage" data-toggle="stage">My Expertise</a>
+            </li>
+            <li>
+                <a href="#creations" data-target=".stage" data-toggle="stage">My Creations</a>
+            </li>
+            <li>
+                <a href="#contact" data-target=".stage" data-toggle="stage">Contact Me</a>
+            </li>
+        </ul>
+    </div>
 
-			<nav class="navbar">
-				<a class="nav-item" href="index.html">About</a>
-				<a class="nav-item" href="portfolio.html">Portfolio</a>
-				<a class="nav-item" href="contact.html">Contact</a>
-			</nav>
-		</div>
-	</header>
-	
-	<section class="content">
-		<div class="wrapper">
-			<div class="main-content">
-				<div class="article-1">
-					<h2>About Me</h2>
-					<hr>
-					<img src="assets/images/me.jpg" alt="Me">
-					<p>As a born problem-solver with a passion for technology, I love finding ways of making technology easy and effective. Whether it be designing websites for small businesses or connecting and managing corporate networks, I strive to bridge people and technology.</p>
-					<br>
 
-					<p>I offer my creativity and skill in programming, web developing, and digital content creation for any project no matter the size or importance. If it empowers people through technology then I want to help.</p>
-				</div>
-			</div>
+    <div class="stage" id="app-stage">
 
-			<div class="sidebar-social">
-				<h2>Connect With Me</h2>
-				<hr>
-				<ul class="social-links">
-					<li class="social-link-item"><a href="https://github.com/MarQG"><img src="assets/images/github.png" alt="GitHub"></a></li>
-					<li class="social-link-item"><a href="https://www.linkedin.com/in/ferenc-gutierrez-a3822a56/"><img src="assets/images/linkedin.png" alt="LinkedIn"></a></li>
-					<li class="social-link-item"><a href="https://stackoverflow.com/users/7847232/ferenc-gutierrez"><img src="assets/images/stackoverflow.png" alt="Stack Overflow"></a></li>
-				</ul>
-			</div>
-		</div>
-	</section>
+        <button class="btn btn-primary stage-toggle" data-target="#app-stage" data-toggle="stage" id="menu-button">
+            <span class="icon icon-menu stage-toggle-icon"></span>
+            Menu
+        </button>
+        <header>
 
-	<footer class="footer">
-		<div class="wrapper">
-			<div class="footer-navbar">
-				<p>&copy; Copyright 2017 Ferenc Gutierrez</p>
-			</div>
-		</div>
-	</footer>
+            <div class="block block-inverse block-fill-height text-center hero-section">
+                <div class="block-foreground block-xs-bottom">
+                    <h1>
+                        <img src="./assets/img/me.jpg" alt="" class="img-circle" id="logo">
+                    </h1>
+                    <h1 class="block-title">
+                        import Full-Stack-Dev from 'Ferenc Gutierrez';
+                    </h1>
+                    <h2>
+                        <span class="icon icon-chevron-thin-left"></span>
+                        EmpowerPeople /
+                        <span class="icon icon-chevron-thin-right"></span>
+                        <span class="icon icon-chevron-thin-left"></span>
+                        CreatePossibility/
+                        <span class="icon icon-chevron-thin-right"></span>
+                        <span class="icon icon-chevron-thin-left"></span>
+                        ShareKnowledge/
+                        <span class="icon icon-chevron-thin-right"></span>
+                    </h2>
 
+                    <a href="#web-dev" class="btn btn-lg btn-info-outline m-t">Run Web-Developer</a>
+                </div>
+                <div class="block-background">
+                    <img src="https://images.pexels.com/photos/34153/pexels-photo.jpg?w=1260&h=750&dpr=2&auto=compress&cs=tinysrgb" />
+                </div>
+            </div>
+        </header>
+
+        <section>
+            <div class="block text-center" id="web-dev">
+                <div class="container-fluid">
+                    <h1 class="block-title">Web Developer &amp; IT Professional</h1>
+                    <div class="row">
+                        <div class="col-md-3">
+
+                        </div>
+                        <div data-transition="entrance" style="transform: translateY(50px)" class="col-md-6">
+                            <h4 class="p-l-md p-r-md"> I believe in helping people bring their dreams into reality and I love to do that through technology.
+                                I believe that technology enables us to bring our ideas and dreams to life for the benefit
+                                of others. I want to help build a world that inspires others, teaches them to never give
+                                up, and shows them that with the right skills, effort, and teamwork we can all succeed.</h4>
+                            <h4> As a Web Developer I use my vast array of skills to solve problems, create strategies, and guide
+                                projects. As an excellent communicator I can explain the technical side to the business side
+                                and vice versa to ensure the overall project meets the needs and expectations of the business
+                                and client. Being adaptable means that if we need to incorporate a new technology or business
+                                process I will learn it and teach it quickly. If there are efforts that need to be coordinated
+                                between multiple groups or individuals then I have the experience to create, manage, implement,
+                                and support the needs of the business in ways that are unique to each situation. If it means
+                                the success of failure of the team and project I will step up to the task.
+                            </h4>
+                        </div>
+                        <div class="col-md-3">
+
+                        </div>
+                    </div>
+
+                </div>
+                <div class="block block-bordered text-center m-t-md" id="expert">
+                    <div class="container-fluid">
+                        <h1 class="block-title">My Expertise</h1>
+                        <h3>
+                            Below is a list of some of the technologies I'm familiar with.
+                        </h3>
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-sm-4">
+                                    <ul class="featured-list featured-list-bordered">
+                                        <li class="m-b-md">
+                                            <div class="featured-list-icon">
+                                                <span class="fab fa-react"></span>
+                                            </div>
+
+                                            <h3>React</h3>
+                                            <h4>
+                                                I love building applications in React.
+                                            </h4>
+                                        </li>
+
+                                        <li>
+                                            <div class="featured-list-icon">
+                                                <span class="icon icon-github"></span>
+                                            </div>
+                                            <h3>Git | GitHub</h3>
+                                            <h4>
+                                                Use github to share things on the internet then change them. Make things better. Free software? But not as in beer.
+                                            </h4>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="col-sm-4">
+                                    <ul class="featured-list featured-list-bordered">
+                                        <li class="m-b-md">
+                                            <div class="featured-list-icon">
+                                                <span class="fas fa-database"></span>
+                                            </div>
+
+                                            <h3>MongoDB | MySQL</h3>
+                                            <h4>
+                                                Need a solid database? I can handle data with Mongo or MySQL.
+                                            </h4>
+                                        </li>
+
+                                        <li>
+                                            <div class="featured-list-icon">
+                                                <span class="fab fa-sass"></span>
+                                            </div>
+                                            <h3>Sass | CSS3</h3>
+                                            <h4>
+                                                When things need to look good I get creative with Sass and CSS3.
+                                            </h4>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="col-sm-4">
+                                    <ul class="featured-list featured-list-bordered">
+                                        <li class="m-b-md">
+                                            <div class="featured-list-icon">
+                                                <span class="fab fa-node"></span>
+                                            </div>
+
+                                            <h3>Node.JS | Express.JS</h3>
+                                            <h4>
+                                                With the power of Node.JS +
+                                                <Express class="JS"></Express> I lay the foundation for my back-end projects.
+                                            </h4>
+                                        </li>
+
+                                        <li>
+                                            <div class="featured-list-icon">
+                                                <span class="fab fa-html5"></span>
+                                            </div>
+                                            <h3>HTML 5</h3>
+                                            <h4>
+                                                Bringing the latest in HTML to build the web of the future.
+                                            </h4>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="block block-bordered text-center" id="creations">
+                    <h1 class="block-title">My Creations</h1>
+                    <h3>
+                        I love building applications and would love to help you build yours. Checkout some of my favorites I have worked on.
+                    </h3>
+
+
+                    <div class="container-fluid m-t">
+                        <div class="col-md-6">
+                            <div class="thumbnail">
+                                <img src="assets/img/eat.png" alt="Eat Neat" class="img-rounded">
+                                <div class="caption">
+                                    <h2>Eat Neat</h2>
+                                    <h4>A proof of concept Application for people with restricted or specialized diets. Users
+                                        can search, favorite, and view recipes and build a mealplan for a week. They can
+                                        also create a grocery list out of the recipes.</h4>
+                                    <p>
+                                        <a href="https://github.com/MarQG/Eat-Neat" class="btn btn-primary btn-lg" role="button">
+                                            <span class="fab fa-github"></span> Repo</a>
+                                        <a href="https://marqg.github.io/Eat-Neat/" class="btn btn-success btn-lg" role="button"><span class="fas fa-desktop"></span>Demo</a>
+                                        </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="thumbnail">
+                                <img src="assets/img/yelp.png" alt="Yelp Camp" class="img-rounded">
+                                <div class="caption">
+                                    <h2>Yelp Camp</h2>
+                                    <h4>Yelp Camp is a Full Stack application built on Node.js, Express.js, MongoDB, and EJS.
+                                        Users are able to create accounts to login and post their favorite campsites and
+                                        leave comments about their experience.</h4>
+                                    <p>
+                                        <a href="https://github.com/MarQG/YelpCampV1" class="btn btn-primary btn-lg" role="button"><span class="fab fa-github"></span> Repo</a>
+                                        <a href="https://frozen-reaches-30908.herokuapp.com/" class="btn btn-success btn-lg" role="button"><span class="fas fa-desktop"></span>Demo</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="thumbnail">
+                                <img src="http://via.placeholder.com/300x150/717071?text=Coming+Soon" alt="Expensify" class="img-rounded">
+                                <div class="caption">
+                                    <h2>Expensify</h2>
+                                    <h4>Expensify is a Full Stack application build with React and Firebase. It allows a user
+                                        to track and manage their expeneses. This is my current WIP and should be completed
+                                        shortly. Feel free to test it out and send me feedback.</h4>
+                                    <p>
+                                        <a href="https://github.com/MarQG/expensify-app" class="btn btn-primary btn-lg" role="button"><span class="fab fa-github"></span> Repo</a>
+                                        <a href="https://react-marqg-expensify.herokuapp.com/" class="btn btn-success btn-lg" role="button"><span class="fas fa-desktop"></span>Demo</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="thumbnail">
+                                <img src="http://via.placeholder.com/300x150/717071?text=Coming+Soon" alt="liQr" class="img-rounded">
+                                <div class="caption">
+                                    <h2>LiQr</h2>
+                                    <h4>LiQr is a Full Stack application for people that enjoy drinks of all kinds. Users can
+                                        log in and weigh in on their drink of choice to see who will make the top spot. They
+                                        can also comment on drinks they have tried. This is also a WIP. Feedback is always
+                                        appreciated.</h4>
+                                    <p>
+                                        <a href="https://github.com/MarQG/liQr-App" class="btn btn-primary btn-lg" role="button"><span class="fab fa-github"></span> Repo</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="thumbnail">
+                                <img src="assets/img/bam.png" alt="Bamazon" class="img-rounded">
+                                <div class="caption">
+                                    <h2>Bamazon CLI</h2>
+                                    <h4>
+                                        Bamazon CLI is a command-line interface Node.js application that runs a store called Bamazon. You are able to interact with
+                                        the three sides of the store from the main menu as a Customer, Supervisor, or Manager.
+                                    </h4>
+                                    <p>
+                                        <a href="https://github.com/MarQG/bamazon-cli" class="btn btn-primary btn-lg" role="button"><span class="fab fa-github"></span> Repo</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="thumbnail">
+                                <img src="assets/img/hang.png" alt="Hangman" class="img-rounded">
+                                <div class="caption">
+                                    <h2>Hangman - Castlevania Edtion</h2>
+                                    <h4>A fun take on the classic hangman game using Javascript.</h4>
+                                    <p>
+                                        <a href="https://github.com/MarQG/Hangman-Game" class="btn btn-primary btn-lg" role="button"><span class="fab fa-github"></span> Repo</a>
+                                        <a href="https://marqg.github.io/Hangman-Game/" class="btn btn-success btn-lg" role="button"><span class="fas fa-desktop"></span>Demo</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <footer>
+            <div class="block block-inverse text-center" id="contact">
+                <div class="block-foreground">
+                    <h1 class="block-title">
+                        Contact Me Today!
+                    </h1>
+
+                    <a href="mailto:ferenc.g87@gmail.com" class="btn btn-lg btn-info-outline m-t">
+                        <span class="icon icon-email"></span> ferenc.g87@gmail.com</a>
+                    <div class="row m-t">
+                        <div class="col-xs-12 m-t">
+                            <ul class="list-inline text-white">
+                                <li class="btn btn-info m-r">
+                                    <a href="https://github.com/MarQG">
+                                        <span class="fab fa-github fa-5x"></span>
+                                    </a>
+                                </li>
+                                <li class="btn btn-info m-r">
+                                    <a href="https://www.linkedin.com/in/ferenc-gutierrez-a3822a56/">
+                                        <span class="fab fa-linkedin fa-5x"></span>
+                                    </a>
+                                </li>
+                                <li class="btn btn-info">
+                                    <a href="https://stackoverflow.com/users/7847232/ferenc-gutierrez">
+                                        <span class="fab fa-stack-overflow fa-5x"></span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </footer>
+    </div>
+
+
+    <!-- Include jQuery (required) and the JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="./dist/toolkit.min.js"></script>
 </body>
+
 </html>
