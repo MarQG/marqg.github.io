@@ -42,14 +42,18 @@ www.github.com/eveporcello/react-router-houston
 Free book link to Learning React in the repo
 
 Setup Routes with HashRouter 
-`
-<HashRouter>
-	<Switch>
-		<Route exact path=“/” component={ComponentName} />
-		<Route component={ComponentName} /> ## Fallback Route
-	</Switch>
-</HashRouter>
-`
+
+`<HashRouter>`
+
+`	<Switch>`
+
+`		<Route exact path=“/” component={ComponentName} />`
+
+`		<Route component={ComponentName} /> ## Fallback Route`
+
+`	</Switch>`
+
+`</HashRouter>`
 
 exact helps us define the parent route of the other routes
 Use exact when a parent router has children routes
@@ -65,19 +69,29 @@ You don’t have to use react-router to route. There are other methods to use.
 
 PageTemplate will render a template and pass in {children}  to render the children in that component and render it inside the PageTemplate component. This is how to handle nested navigation with react-router
 
-`
-const PageTemplate = ({ children }) => 
-	<div className="page">
-		<MainMenu />
-		{ children }
-	</div>
+`const PageTemplate = ({ children }) => `
 
-export const Vans = () => 
-	<PageTemplate>
-		## This will setup the sub routes for Vans
-		<Router path="/star-wars" component={StarWars} />
-		<Router path="/horse" component={Horse} />
-		<Router path="/snake-and-wolf" component={SnakeAndWolf} />
-	</PageTemplate>
-`
+`	<div className="page">`
+
+`		<MainMenu />`
+
+`		{ children }`
+
+`	</div>`
+
+
+`export const Vans = () => `
+
+`	<PageTemplate>`
+
+`		## This will setup the sub routes for Vans`
+
+`		<Router path="/star-wars" component={StarWars} />`
+
+`		<Router path="/horse" component={Horse} />`
+
+`		<Router path="/snake-and-wolf" component={SnakeAndWolf} />`
+
+`	</PageTemplate>`
+
 
