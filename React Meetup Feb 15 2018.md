@@ -44,10 +44,15 @@ Free book link to Learning React in the repo
 Setup Routes with HashRouter 
 
 `<HashRouter>`
+
 `	<Switch>`
+
 `		<Route exact path=“/” component={ComponentName} />`
+
 `		<Route component={ComponentName} /> ## Fallback Route`
+
 `	</Switch>`
+
 `</HashRouter>`
 
 exact helps us define the parent route of the other routes
